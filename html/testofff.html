@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DARK WEB</title>
+
+  <!-- Hubungkan CSS -->
+  <link rel="stylesheet" href="body.css">
+</head>
+<body>
+
+  <h1>DARK WEB</h1>
+
+  <div class="container">
+
+    <!-- 1 -->
+    <div class="card">
+      <h2>Nayla</h2>
+      <input type="password" id="pass1" placeholder="Password">
+      <button onclick="cekPassword('pass1','Aleeda','secret1')">Buka Surat</button>
+      <div class="secret" id="secret1"><p>
+Makasih udah jadi kawan curhat. maaf kalo ada selama ini ada perkataan atau perbuataan yang buatmu sakit ati 🙏🙏🙏
+Makasih juga udah mao dengarkan ocehan orang gila ini 😁😁😁
+Sehat selalu Nay, tetap semangat nay. semoga pertemanan kita semakin erat dan ndak ada drama lagi.</p></div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <h2>Ayu</h2>
+      <input type="password" id="pass2" placeholder="Password">
+      <button onclick="cekPassword('pass2','Shibal','secret2')">Buka Surat</button>
+      <div class="secret" id="secret2"><p> Makasih dah jadi kawanku😁😁😁
+jujur kadang aku kesal denganmu tapi ya itu yang unik dari kau,
+ sorry ye kalo selama ini sering buat kesal 😁😁😁
+Sehat selalu Yu, semoga pertemanan kita makin erat dan dak banyak drama 😁😁😁
+</p></div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <h2>Shanda</h2>
+      <input type="password" id="pass3" placeholder="Password">
+      <button onclick="cekPassword('pass3','Aurelia','secret3')">Buka Surat</button>
+      <div class="secret" id="secret3"><p>Makasih san, maaf kalo selama ini ada perbuataan atau perkataan yang buatmu sakit ati.
+        aku memang suka kamu, sifatmu yang suka ngegas,
+        mungkin keliatan aneh tapi itu yang unik darimu, aku memang belum banyak tahu tentangmu, 
+        maaf juga kalo kadang buatmu ndak nyaman, aku harap dengan surat ini aku bisa lebih mengenalmu. 
+        sehat selalu San.
+      </p></div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <h2>Adinda</h2>
+      <input type="password" id="pass4" placeholder="Password">
+      <button onclick="cekPassword('pass4','BangunDin','secret4')">Buka Surat</button>
+      <div class="secret" id="secret4"><p>din, makasih ya dah jadi kawanku 😁😁😁,
+        semoga nanti kau bisa ikut kita jalan-jalan, sehat selalu ya din, maaf kalo selama ini ada perkataan atau perbuataan yang buatmu sakit ati.
+      Semoga pertemanan kita ndak ada banyak drama lagi 😁😁😁</p></div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <h2>Raya</h2>
+      <input type="password" id="pass5" placeholder="Password">
+      <button onclick="cekPassword('pass5','Lucukauboy','secret5')">Buka Surat</button>
+      <div class="secret" id="secret5"><p>Thank you Ray, aku ndak nyangka bakal dapat kawan kayamu.
+      maaf kalo selama ini ada perbuataan atau perkataan yang buatmu kesal, aku awalnya kira kau orangnya nyeramkan.
+      api sekarang aku malah ketawa setiap liat mukamu, bukan karena seram atau apa, tapi lucu jak.
+      </p></div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <h2>Afif</h2>
+      <input type="password" id="pass6" placeholder="Password">
+      <button onclick="cekPassword('pass6','TukangOTW','secret6')">Buka Surat</button>
+      <div class="secret" id="secret6"><p>Makasih dah jadi kawanku Pip, 
+        sorry kalo ada perkataan atau perbuataan yang buatmu sakit hati, 
+Walau jujur kadang aku kesal dengan OTWmu, karena aku kadang bingung ini benar OTW atau dak,
+ tapi itu yang unik dari kau. sehat selalu Kang OTW, semoga pertemanan kita sampai Surga nanti.
+</p></div>
+    </div>
+    <!-- 7 -->
+    <div class="card">
+      <h2>Fajar</h2>
+      <input type="password" id="pass7" placeholder="Password">
+      <button onclick="cekPassword('pass7','Mynigga','secret7')">Buka Surat</button>
+      <div class="secret" id="secret7"><p>Makasih dah jadi kawanku jar
+        sorry kalo ada perkataan yang buatmu tersinggung 😁😁😁
+        mungkin aku bukan kawan pertamamu tapi kau, afif dan arizlah kawan pertamaku di kampus ini.
+        Sehat selalu jar, semoga pertemanan kita sampai surga nanti.</p></div>
+    </div>
+    <!-- 8 -->
+    <div class="card">
+      <h2>Nopal</h2>
+      <input type="password" id="pass8" placeholder="Password">
+      <button onclick="cekPassword('pass8','Mandi','secret8')">Buka Surat</button>
+      <div class="secret" id="secret8"><p>Pal, aku cuman nak bilang makasih dah mao jadi kawanku,
+        walau sekarang mungkin kita jarang komunikasi tapi kita tetap jadi kawan, tetap semangat ye pal, sehat selalu pal,
+        semoga segala urusanmu dipermudah.
+      </p></div>
+    </div>
+
+  </div>
+
+  <script>
+    function cekPassword(inputId, passwordBenar, secretId){
+      let input = document.getElementById(inputId).value;
+      let secret = document.getElementById(secretId);
+
+      if(input === passwordBenar){
+        secret.style.display = "block";
+      } else {
+        alert("Password salah!");
+      }
+    }
+  </script>
+
+</body>
+</html>
